@@ -15,7 +15,7 @@ img {
     width: 500px;
     height: 300px;
     position: absolute;
-  
+
 }
 
 .tabs {
@@ -109,3 +109,25 @@ img {
     transition-duration: 2s;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .tabs li>input~.slider-desc {
+        top: 40px;
+        left: -650px;
+    }
+
+    .tabs li>input:checked~.slider-desc {
+        top: 40px;
+        left: -180px;
+    }
+
+    .tabs {
+        bottom: 50px;
+        right: 250px;
+    }
+
+    .tabs .tab-content {
+        right: -150px;
+        top: -320px;
+    }
+
+}
